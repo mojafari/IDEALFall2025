@@ -38,7 +38,7 @@ This is a utility script designed to generate high-resolution ArUco markers for 
 
 1.  Navigate to the project directory:
     ```sh
-    cd IDEALFall2025/marker_generator
+    cd IDEALFall2025/Tello_Aruco/Aruco_Generator
     ```
 
 2.  Create a virtual environment (recommended):
