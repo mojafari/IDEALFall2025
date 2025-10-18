@@ -53,7 +53,7 @@ This project extends the control capabilities of a DJI Tello mini-drone by using
 1.  **Clone the repository (or navigate to the project directory):**
     ```sh
     # Assuming the code is part of a larger project, navigate to the specific folder
-    cd IDEALFall2025/tello_pose_control
+    cd IDEALFall2025/Tello_PoseCTRL
     ```
 
 2.  **Create a virtual environment (recommended):**
@@ -86,3 +86,23 @@ The program will:
 
 ## Poses and Commands
 
+| Pose | Command | Description |
+| :------ | :---------- | :----- |
+| Both arms up | TAKE_OFF | Lifts the drone off the ground. |
+| Both arms down | LAND | Lands the drone safely. |
+| Both arms forward | FORWARD | Moves the drone forward. |
+| Left arm up | ROTATE_LEFT | Rotates the drone counter-clockwise. |
+| Right arm up | ROTATE_RIGHT | Rotates the drone clockwise. |
+| Other gestures | HOVER | Keeps the drone stationary. |
+
+
+## Learnings and Challenges
+
+*   **Pose-based Command Interpretation:** Interpreting complex body poses robustly from a single camera angle can be challenging. The logic must be simple yet effective to avoid misinterpreting minor body movements.
+*   **Response Latency:** Full-body pose detection can be more computationally intensive than hand detection. Fine-tuning the command cooldown (`command_cooldown`) is critical to ensure a balance between responsiveness and stability.
+*   **Thread Synchronization:** Managing shared state and ensuring threads communicate without data corruption is a key learning point from implementing this project.
+
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE.md).
