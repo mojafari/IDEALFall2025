@@ -1,4 +1,4 @@
-# README.md: ArUco Marker Generator
+# ArUco Marker Generator
 
 This README provides instructions for the `generate_single_aruco_page.py` script, which generates and saves letter-sized ArUco markers, with one marker per PDF file. This is ideal for printing large, highly visible markers to be used with your Tello drone.
 
